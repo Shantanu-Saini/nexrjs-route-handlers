@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     }
     users.push(newUser);
     return new Response(
-        JSON.stringify(newUser),  // or // "newuser created", 
+        JSON.stringify(newUser),  // or // "newuser created", // or // JSON.stringify(user),
         {
         headers: {
             'Content-Type': 'application/json',
